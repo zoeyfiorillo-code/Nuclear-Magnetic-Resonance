@@ -1,7 +1,7 @@
 %% Nuclear Magnetic Resonance - Program to compare exponential curve fitting to linear curve fitting
 clc; clear all; close all;  help NMR_Fit_Comp      % Clear the memory and print header
 %% read CSV file data scraped from oscilloscope
-NMR_data = readtable('NMR_Data.csv');
+NMR_data = readtable('Data/NMR_Data.csv');
 NMR_data.Properties.VariableNames = {'t_FID', 'V_FID'};
 % extract columns and transpose into row vectors
 t = NMR_data.t_FID';
