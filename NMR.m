@@ -2,7 +2,7 @@
 clc; clear all; close all; help NMR      % Clear the memory and print header
 %% T2* Effective Transverse Relaxation Time via FID
 % read CSV file data scraped from oscilloscope
-NMR_data = readtable('NMR_Data.csv');
+NMR_data = readtable('Data/NMR_Data.csv');
 NMR_data.Properties.VariableNames = {'t_FID', 'V_FID'};
 % extract columns and transpose into row vectors
 t_FID = NMR_data.t_FID';
